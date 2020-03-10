@@ -1,0 +1,16 @@
+[package]
+name = "comparison_of_maps"
+version = "0.1.0"
+authors = ["Paul Loyd <pavelko95@gmail.com>"]
+edition = "2018"
+
+[[bench]]
+name = "map"
+harness = false
+
+[dependencies]
+packed_simd = "0.3.3"
+fxhash = "0.2.1"
+
+[dev-dependencies]
+criterion = "0.3.1"

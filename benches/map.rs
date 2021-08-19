@@ -2,7 +2,7 @@ use std::mem;
 
 use criterion::{criterion_group, criterion_main, Bencher, BenchmarkId, Criterion};
 
-use bench_linear_map::*;
+use comparison_of_maps::*;
 
 fn fill<V: Default, M: Map<u32, V> + Default>(count: u32) -> M {
     let mut map = M::default();

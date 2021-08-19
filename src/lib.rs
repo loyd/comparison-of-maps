@@ -1,8 +1,8 @@
-use std::hash::Hash;
 use std::collections;
+use std::hash::Hash;
 
+use fxhash::FxBuildHasher;
 use packed_simd::{u32x16, u32x8};
-use fxhash::{FxBuildHasher};
 
 pub trait Map<K, V> {
     fn insert(&mut self, key: K, value: V);
